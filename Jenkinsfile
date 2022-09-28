@@ -18,22 +18,6 @@ pipeline {
         
             }
         }
-        stage("B"){
-            steps{
-                echo "====++++executing B++++===="
-            }
-            post{
-                always{
-                    echo "====++++always++++===="
-                }
-                success{
-                    echo "====++++B executed successfully++++===="
-                }
-                failure{
-                    echo "====++++B execution failed++++===="
-                }
-        
-            }
-        }
+    
     }
 }
